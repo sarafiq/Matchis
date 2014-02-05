@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4217065F1882D8B3006624E8 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 4217065E1882D8B3006624E8 /* Card.m */; };
+		421706641882DC48006624E8 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 421706631882DC48006624E8 /* PlayingCard.m */; };
+		421706671882DF1D006624E8 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 421706661882DF1D006624E8 /* Deck.m */; };
+		4217066A1883096C006624E8 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 421706691883096C006624E8 /* PlayingCardDeck.m */; };
 		42DA7D6C1838897500421052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DA7D6B1838897500421052 /* Foundation.framework */; };
 		42DA7D6E1838897500421052 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DA7D6D1838897500421052 /* CoreGraphics.framework */; };
 		42DA7D701838897500421052 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DA7D6F1838897500421052 /* UIKit.framework */; };
@@ -34,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4217065D1882D8B3006624E8 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		4217065E1882D8B3006624E8 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		421706621882DC48006624E8 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		421706631882DC48006624E8 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
+		421706651882DF1D006624E8 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		421706661882DF1D006624E8 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
+		421706681883096C006624E8 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
+		421706691883096C006624E8 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		42DA7D681838897500421052 /* Matchis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DA7D6B1838897500421052 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42DA7D6D1838897500421052 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +91,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421706611882D99A006624E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				421706621882DC48006624E8 /* PlayingCard.h */,
+				421706681883096C006624E8 /* PlayingCardDeck.h */,
+				421706691883096C006624E8 /* PlayingCardDeck.m */,
+				421706651882DF1D006624E8 /* Deck.h */,
+				421706661882DF1D006624E8 /* Deck.m */,
+				421706631882DC48006624E8 /* PlayingCard.m */,
+				4217065D1882D8B3006624E8 /* Card.h */,
+				4217065E1882D8B3006624E8 /* Card.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		42DA7D5F1838897400421052 = {
 			isa = PBXGroup;
 			children = (
@@ -112,11 +139,10 @@
 		42DA7D711838897500421052 /* Matchis */ = {
 			isa = PBXGroup;
 			children = (
-				42DA7D7A1838897500421052 /* CardGameAppDelegate.h */,
-				42DA7D7B1838897500421052 /* CardGameAppDelegate.m */,
 				42DA7D7D1838897500421052 /* Main.storyboard */,
 				42DA7D801838897500421052 /* CardGameViewController.h */,
 				42DA7D811838897500421052 /* CardGameViewController.m */,
+				421706611882D99A006624E8 /* Model */,
 				42DA7D831838897500421052 /* Images.xcassets */,
 				42DA7D721838897500421052 /* Supporting Files */,
 			);
@@ -126,6 +152,8 @@
 		42DA7D721838897500421052 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42DA7D7A1838897500421052 /* CardGameAppDelegate.h */,
+				42DA7D7B1838897500421052 /* CardGameAppDelegate.m */,
 				42DA7D731838897500421052 /* Matchis-Info.plist */,
 				42DA7D741838897500421052 /* InfoPlist.strings */,
 				42DA7D771838897500421052 /* main.m */,
@@ -253,6 +281,10 @@
 				42DA7D7C1838897500421052 /* CardGameAppDelegate.m in Sources */,
 				42DA7D821838897500421052 /* CardGameViewController.m in Sources */,
 				42DA7D781838897500421052 /* main.m in Sources */,
+				421706641882DC48006624E8 /* PlayingCard.m in Sources */,
+				4217066A1883096C006624E8 /* PlayingCardDeck.m in Sources */,
+				421706671882DF1D006624E8 /* Deck.m in Sources */,
+				4217065F1882D8B3006624E8 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchis/Matchis-Prefix.pch";
 				INFOPLIST_FILE = "Matchis/Matchis-Info.plist";
@@ -392,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matchis/Matchis-Prefix.pch";
 				INFOPLIST_FILE = "Matchis/Matchis-Info.plist";
@@ -461,6 +495,7 @@
 				42DA7D9C1838897500421052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42DA7D9D1838897500421052 /* Build configuration list for PBXNativeTarget "MatchisTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +504,7 @@
 				42DA7D9F1838897500421052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
